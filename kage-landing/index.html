@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KAGE — Space Weather Protection for Global Aviation</title>
+  <meta name="description"
+    content="KAGE is the ultimate space weather decision support engine for airline Operations Control Centres. Optimise polar routing, minimise fuel burn, and predict disruption before it strikes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ═══ SPLASH JOKE SCREEN ═══ -->
+  <div class="splash-screen" id="splashScreen">
+    <div class="splash-content">
+      <div class="splash-text splash-sike" id="splashSike">
+        <p class="splash-small">wait...</p>
+        <h1>SIKE!</h1>
+        <p class="splash-sub">You thought we could build<br>a website in <span class="text-accent">one week</span>?</p>
+      </div>
+      <div class="splash-text splash-yes" id="splashYes">
+        <h1>ACTUALLY YES,</h1>
+        <p class="splash-sub-big">WE <span class="text-accent">DID IT.</span></p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo"><img src="assets/KAGE.png" alt="KAGE Logo" class="logo-img" /></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#problem">The Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Request Demo</a>
+      <button class="nav-toggle" id="navToggle"
+        aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <header class="hero" id="hero">
+    <canvas id="heroCanvas" class="hero-canvas"></canvas>
+    <div class="hero-glow"></div>
+    <div class="hero-content reveal">
+      <p class="hero-tagline"><i class="fa-solid fa-satellite-dish"></i> Space Weather Intelligence</p>
+      <h1 class="hero-headline">THE SHADOW<br>PROTECTING<br><span class="text-accent">GLOBAL AVIATION.</span></h1>
+      <p class="hero-sub">KAGE is the ultimate space weather decision support engine for Operations Control Centres
+        (OCC). We optimise polar routing, minimise fuel burn, and predict disruption before it strikes.</p>
+      <div class="hero-buttons">
+        <a href="#solution" class="btn btn-primary btn-lg">Explore the Platform</a>
+        <a href="#problem" class="btn btn-outline btn-lg">View the Data</a>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="section section-problem" id="problem">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label"><i class="fa-solid fa-triangle-exclamation"></i> Identifying the Risk</p>
+        <h2 class="section-title">THE INVISIBLE THREAT.</h2>
+        <p class="section-desc">Space Weather (SWE) events severely disrupt <strong>Communications, Navigation, and
+            Surveillance (CNS)</strong> systems. Generic bulletins lead to overly conservative routing, burning
+          unnecessary fuel and causing cascading network delays.</p>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric-card reveal">
+          <div class="metric-icon"><i class="fa-solid fa-plane-slash"></i></div>
+          <div class="metric-value" data-target="96.96" data-suffix="%" data-decimals="2">0</div>
+          <p class="metric-label">Increase in Flight Cancellations during SWEs</p>
+          <div class="metric-bar">
+            <div class="metric-bar-fill" style="--bar-width:97%"></div>
+          </div>
+        </div>
+        <div class="metric-card reveal">
+          <div class="metric-icon"><i class="fa-solid fa-gas-pump"></i></div>
+          <div class="metric-value" data-target="1793" data-suffix=" kg" data-decimals="0">0</div>
+          <p class="metric-label">Extra Fuel Burned per polar flight reroute</p>
+          <div class="metric-bar">
+            <div class="metric-bar-fill" style="--bar-width:75%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-solution" id="solution">
+    <div class="container">
+      <div class="solution-grid">
+        <div class="solution-visual reveal">
+          <div class="visual-frame">
+            <img src="assets/kage_shield_visual.png" alt="KAGE Route Optimiser visualisation" loading="lazy" />
+            <div class="visual-overlay"></div>
+            <div class="visual-scanline"></div>
+          </div>
+        </div>
+        <div class="solution-content reveal">
+          <p class="section-label"><i class="fa-solid fa-route"></i> Our Approach</p>
+          <h2 class="section-title">INTELLIGENT ROUTE OPTIMISATION.</h2>
+          <p class="section-desc">The <strong>KAGE Route Optimizer</strong> translates raw space weather anomalies into
+            actionable financial and safety metrics.</p>
+          <ul class="solution-features">
+            <li>
+              <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+              <div>
+                <h4>Predictive ML Insights</h4>
+                <p>Correlates historical anomaly data with real-time solar indices.</p>
+              </div>
+            </li>
+            <li>
+              <div class="feature-icon"><i class="fa-solid fa-crosshairs"></i></div>
+              <div>
+                <h4>Asset-Specific Scoring</h4>
+                <p>Tailored risk assessments based on your specific aircraft type and route.</p>
+              </div>
+            </li>
+            <li>
+              <div class="feature-icon"><i class="fa-solid fa-list-check"></i></div>
+              <div>
+                <h4>Automated Playbooks</h4>
+                <p>Actionable reroute options balancing safety against fuel delta analysis.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-features" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label"><i class="fa-solid fa-cubes"></i> Platform Capabilities</p>
+        <h2 class="section-title">BUILT FOR OPERATIONS.</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-card-icon"><i class="fa-solid fa-plug-circle-check"></i></div>
+          <h3>Seamless Integration</h3>
+          <p>Connects directly with legacy flight planning systems like <strong>Lido</strong> and
+            <strong>Jeppesen</strong> via secure API.
+          </p>
+          <div class="feature-card-glow"></div>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card-icon"><i class="fa-solid fa-piggy-bank"></i></div>
+          <h3>Cost Reduction</h3>
+          <p>Recovers <strong>10-20%</strong> of unnecessary fuel burn through precise, risk-adjusted routing.</p>
+          <div class="feature-card-glow"></div>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card-icon"><i class="fa-solid fa-shield-heart"></i></div>
+          <h3>Disruption Prevention</h3>
+          <p>Reduces SWE-related cancellations by <strong>5%</strong> through predictive impact assessments.</p>
+          <div class="feature-card-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-team" id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label"><i class="fa-solid fa-users-gear"></i> Leadership</p>
+        <h2 class="section-title">FOUNDED BY EXPERTS.</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <a href="https://www.linkedin.com/in/kornelia-wojtowicz-ba9136312" target="_blank" rel="noopener" class="team-link">
+            <div class="team-avatar"><img src="assets/Kornelia.jpeg" alt="Kornelia" /></div>
+          </a>
+          <h4>Kornelia</h4>
+          <p class="team-role">Operations Strategy</p>
+          <a href="https://www.linkedin.com/in/kornelia-wojtowicz-ba9136312" target="_blank" rel="noopener" class="team-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="team-card reveal">
+          <a href="https://www.linkedin.com/in/álvaro-martínez-collado-b00a3b299/" target="_blank" rel="noopener" class="team-link">
+            <div class="team-avatar"><img src="assets/Alvaro.jpeg" alt="Alvaro" /></div>
+          </a>
+          <h4>Alvaro</h4>
+          <p class="team-role">Software Systems</p>
+          <a href="https://www.linkedin.com/in/álvaro-martínez-collado-b00a3b299/" target="_blank" rel="noopener" class="team-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="team-card reveal">
+          <a href="https://www.linkedin.com/in/gonzalo-leon-guitart-palonsky-9871541ab/" target="_blank" rel="noopener" class="team-link">
+            <div class="team-avatar"><img src="assets/Gonzalo.jpeg" alt="Gonzalo" /></div>
+          </a>
+          <h4>Gonzalo</h4>
+          <p class="team-role">Space Physics</p>
+          <a href="https://www.linkedin.com/in/gonzalo-leon-guitart-palonsky-9871541ab/" target="_blank" rel="noopener" class="team-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="team-card reveal">
+          <a href="https://www.linkedin.com/in/bär-eric/" target="_blank" rel="noopener" class="team-link">
+            <div class="team-avatar"><img src="assets/Eric.jpeg" alt="Eric" /></div>
+          </a>
+          <h4>Eric</h4>
+          <p class="team-role">Product Design</p>
+          <a href="https://www.linkedin.com/in/bär-eric/" target="_blank" rel="noopener" class="team-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="#" class="nav-logo footer-logo"><img src="assets/KAGE.png" alt="KAGE Logo" class="logo-img" /></a>
+          <p>Aviation Space Weather Solutions.</p>
+        </div>
+        <div class="footer-contact">
+          <h5>Contact</h5><a href="mailto:team@kage.space"><i class="fa-solid fa-envelope"></i> team@kage.space</a>
+        </div>
+        <div class="footer-links">
+          <h5>Navigate</h5><a href="#problem">The Problem</a><a href="#solution">Solution</a><a
+            href="#features">Features</a><a href="#team">Team</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 KAGE. All rights reserved.</p>
+        <p>Protecting aviation from the invisible threat.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
